@@ -11,8 +11,7 @@ open class AcceptLocation : Task {
     @Step("{0} enables location services")
     override fun <T : Actor> performAs(actor: T) {
         actor.attemptsTo(
-            Click.on(AllowLocationWindow.ALLOW_WHILE_USING_THE_APP)
+            Click.on(AllowLocationWindow.ALLOW)
         )
     }
-
 }

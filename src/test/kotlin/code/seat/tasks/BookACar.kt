@@ -14,5 +14,4 @@ open class BookACar : Task {
             Click.on(CarWindow.BOOK_NOW)
         )
     }
-
 }

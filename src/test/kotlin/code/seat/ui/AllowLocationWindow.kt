@@ -2,16 +2,14 @@ package code.seat.ui
 
 import io.appium.java_client.MobileBy
 import net.serenitybdd.screenplay.targets.Target
+import org.openqa.selenium.By
 
 object AllowLocationWindow {
-    val ALLOW_WHILE_USING_THE_APP  : Target = Target.the("Allow while using the app").located(
-        MobileBy.AccessibilityId("Allow While Using App")
+    val ALLOW  : Target = Target.the("Allow while using the app").located(
+        By.id("com.android.packageinstaller:id/permission_allow_button")
     )
 
-    val ALLOW_ONCE  : Target = Target.the("Allow Once").located(
-        MobileBy.AccessibilityId("Allow Once")
-    )
-    val DONT_ALLOW  : Target = Target.the("Don't allow").located(
-        MobileBy.AccessibilityId("Don't Allow")
+    val DENY  : Target = Target.the("Allow Once").located(
+        MobileBy.id("com.android.packageinstaller:id/permission_deny_button")
     )
 }

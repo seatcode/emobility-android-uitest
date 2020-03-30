@@ -13,7 +13,7 @@ import net.thucydides.core.annotations.Step
 
 open class Login : Task {
 
-    private var credentials : Credentials = Credentials("thetestisalie@test.com","noC4k342")
+    private var credentials : Credentials = Credentials("gerard.torrent+1803@code.seat","Mang0filipin0")
 
     @Step("{0} logins with {String}")
     override fun <T: Actor> performAs(actor: T){
@@ -28,7 +28,6 @@ open class Login : Task {
     fun withValidCredentials(): Login {
         return instrumented(Login::class.java,validCredentials())
     }
-
 }
 
 

@@ -10,6 +10,7 @@ version = "1.0-SNAPSHOT"
 buildscript{
     repositories {
         mavenCentral()
+        google()
         jcenter()
     }
     dependencies {
@@ -26,6 +27,7 @@ dependencies {
     testImplementation("junit:junit:4.13")
     testImplementation("net.serenity-bdd:serenity-cucumber:1.9.51")
     testImplementation("net.serenity-bdd:serenity-screenplay:2.1.6")
+
 }
 
 tasks {

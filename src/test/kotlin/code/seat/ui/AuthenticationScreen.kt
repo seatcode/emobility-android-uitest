@@ -5,6 +5,6 @@ import net.serenitybdd.screenplay.targets.Target
 
 object AuthenticationScreen{
     val LOGIN_OPTION_BUTTON : Target = Target.the("Login option button").located(
-        MobileBy.name("Login")
+        MobileBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.Button[1]")
     )
 }

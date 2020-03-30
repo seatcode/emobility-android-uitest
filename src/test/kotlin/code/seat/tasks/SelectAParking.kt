@@ -11,8 +11,10 @@ open class SelectAParking : Task{
     @Step("{0} selects a parking")
     override fun <T : Actor> performAs(actor: T) {
         actor.attemptsTo(
-            Click.on(MapScreen.MAP_PIN)
-        )
+            Click.on(MapScreen.GPS_BUTTON))
+        Thread.sleep(1000)
+        actor.attemptsTo(
+            Click.on(MapScreen.MAP_PIN))
     }
 
     fun theFirstFound(): SelectAParking {

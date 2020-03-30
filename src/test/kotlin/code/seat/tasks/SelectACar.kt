@@ -9,7 +9,7 @@ import net.thucydides.core.annotations.Step
 
 open class SelectACar : Task{
 
-    private var carName: String = "SEAT Leon"
+    private var carName: String = "SEAT eMii"
 
     @Step("{0} selects a car")
     override fun <T : Actor> performAs(actor: T) {
@@ -18,7 +18,7 @@ open class SelectACar : Task{
         )
     }
 
-    open fun withName(carName: String): SelectACar {
+    fun withName(carName: String): SelectACar {
         return instrumented(SelectACar::class.java,carName)
     }
 }

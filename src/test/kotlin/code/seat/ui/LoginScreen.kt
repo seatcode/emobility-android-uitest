@@ -5,15 +5,13 @@ import net.serenitybdd.screenplay.targets.Target
 
 object LoginScreen {
     val LOGIN_FORM_BUTTON: Target = Target.the("Login form submit button").located(
-        MobileBy.name("lel")
+        MobileBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.Button[1]")
     )
     val LOGIN_FORM_PASSWORD: Target = Target.the("Login Password input text").located(
-        MobileBy.name("lal")
+        MobileBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout[2]/android.widget.FrameLayout/android.widget.EditText")
     )
 
     val LOGIN_FORM_EMAIL : Target = Target.the("Login Email text input").located(
-        MobileBy.name("lol")
+        MobileBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout[1]/android.widget.FrameLayout/android.widget.EditText")
     )
-
-
 }

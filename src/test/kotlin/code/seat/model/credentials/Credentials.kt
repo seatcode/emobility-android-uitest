@@ -7,7 +7,7 @@ data class Credentials (
 
 fun validCredentials() : Credentials{
     return Credentials(
-        userEmail = System.getProperty("EMOBILITY_USER_EMAIL"),
-        userPassword = System.getProperty("EMOBILITY_USER_PASSWORD")
+        userEmail = "gerard.torrent+1803@code.seat",
+        userPassword = "Mang0filipni0"
     )
 }
